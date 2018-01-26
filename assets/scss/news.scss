@@ -1,0 +1,82 @@
+/* Kitchen Single */
+
+.news { 
+
+
+    .container {
+
+        height: 40vh;
+        min-height:150px;
+
+        @media (max-width: 660px) { max-height:300px; }
+
+        h1 {
+            font-size: 79px;
+            font-weight: 500;
+            color: #4a565c;
+            line-height: 1.1em;
+            letter-spacing: 0px;
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 20px;
+
+            @media (max-width: 860px) { font-size: 60px; }
+            @media (max-width: 660px) { font-size: 40px; }
+
+            span {color:#be8833;}
+        }  
+
+
+     }
+
+}
+
+
+.posts {    
+    padding: 10em 0em;
+    background: #4a565c;
+    color:#be8833; 
+
+    @media (max-width: 860px) { padding: 7em 0em; }
+    @media (max-width: 660px) { padding: 5em 0em; }
+
+    .container {
+
+        .row {
+            .col-sm-12 {
+
+                h2 {
+                    letter-spacing:2px;
+                    font-size: 46px;
+                    font-weight: 400;
+
+            @media (max-width: 860px) { font-size: 40px; }
+            @media (max-width: 660px) { font-size: 20px; }
+                
+                }
+             }
+        }
+    }     
+}
+
+.post {    
+    padding: 10em 0em;
+     
+    .container {
+        max-width:1000px;
+
+        img {
+            margin:40px auto;
+            max-width:100%;
+            height: auto;
+        }
+
+        .aligncenter {
+            margin:40px auto;
+            max-width:100%;
+            height: auto;
+        }
+
+    }     
+}

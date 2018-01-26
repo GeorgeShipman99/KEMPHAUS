@@ -1,0 +1,253 @@
+/* Video */
+
+
+.video-wrapper { display:block; width:100%; max-width: 700px; margin:100px  auto;}
+
+.video_container {
+    position: relative;
+    padding-bottom: 52.12%;
+    padding-top: 25px;
+    height: 0;
+    width: 100%;
+    margin: 5px 0px 0px;
+    overflow: hidden;
+}
+
+.video_container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.video_banner {
+
+    position: relative;
+
+    @media (min-width: 1400px) { height: 65vh; overflow: hidden;}
+    @media (min-width: 1100px) { height: 55vh; overflow: hidden;} 
+
+    .title_container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        opacity: 1;
+        z-index: 12;
+        pointer-events:none;
+        
+        @media (max-width: 992px) { 
+            top:50%;
+            left:50%;
+            position:absolute;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            padding: 0px;
+            margin: 0px;
+            width: auto;
+            height: auto;
+            opacity: 0;
+            text-transform: uppercase;
+            font-size: 54px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            max-width: 600px;
+            text-align: center;
+            text-shadow: 0px 0px 34px #000;
+           -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-animation: zoomIn 300ms linear 7.1s 1 forwards;
+            -moz-animation: zoomIn 300ms linear 7.1s 1 forwards;
+            -o-animation: zoomIn 300ms linear 7.1s 1 forwards;
+            animation: zoomIn 300ms linear 7.1s 1 forwards;
+
+                @media (max-width: 992px) {
+                    top: 50%;
+                    left: 50%;
+                    font-size: 6vw;
+                    max-width: none;
+                    width: 100%;
+                    padding: 0px 40px;}
+                }
+        }
+ 
+
+    .video_container {
+        position: relative;
+        padding: 0px;
+        padding-bottom: 56.25%;
+        height: 0;
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
+        opacity:0;
+        -webkit-animation: fadeIn 700ms ease-out 1s 1 forwards;
+        -moz-animation: fadeIn 700ms ease-out 1s 1 forwards;
+        -o-animation: fadeIn 700ms ease-out 1s 1 forwards;
+        animation: fadeIn 700ms ease-out 1s 1 forwards;
+
+        @media (min-width: 1100px) { 
+        position: absolute;
+        padding: 0px;
+        padding-bottom: 56.25%;
+        height: 0;
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        }
+
+        .curtain {
+            background: #000;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+            position: absolute;
+            opacity:1;
+            pointer-events:none;
+
+            -webkit-animation: fadeOut 700ms ease-out 6.6s 1 forwards;
+            -moz-animation: fadeOut 700ms ease-out 6.6s 1 forwards;
+            -o-animation: fadeOut 700ms ease-out 6.6s 1 forwards;
+            animation: fadeOut 700ms ease-out 6.6s 1 forwards;
+        } 
+       
+
+        .logo-anime {
+            width:700px;
+            height:170px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            opacity:1;
+            z-index:10 !important;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-animation: zoomOut 500ms linear 6.5s 1 forwards;
+            -moz-animation: zoomOut 500ms linear 6.5s 1 forwards;
+            -o-animation: zoomOut 500ms linear 6.5s 1 forwards;
+            animation: zoomOut 500ms linear 6.5s 1 forwards;
+
+
+            @media (max-width: 727px) { width:350px; height:85px;}
+            @media (max-width: 420px) { width:175px; height:42.5px;}
+            
+
+            img { position: absolute;}
+
+            h1 {
+                    opacity:0;
+                    positon: absolute;
+                    left:0%;
+                    text-align:center;
+                    -webkit-animation: zoomIn 300ms ease-out 6.5s 1 forwards;
+                    -moz-animation: zoomIn 300ms ease-out 6.5s 1 forwards;
+                    -o-animation: zoomIn 300ms ease-out 6.5s 1 forwards;
+                    animation: zoomIn 300ms ease-out 6.5s 1 forwards;
+
+                }
+
+            .skymotion {width:100%; height:auto;}
+            .camera {
+                width: 11.5%;
+                height: auto;
+                left: 53%;
+                top: 16%;
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                -webkit-animation: spinnerOff 7s ease-in 2.2s 1 forwards;
+                -moz-animation: spinnerOff 7s ease-in 2.2s 1 forwards;
+                -o-animation: spinnerOff 7s ease-in 2.2s 1 forwards;
+                animation: spinnerOff 7s ease-in 2.2s 1 forwards; 
+
+            }
+
+            .suffix {
+                width: 31.5%;
+                height: 31px;
+                bottom: 0%;
+                right: -3%;
+                position: absolute;
+                overflow:hidden;
+                -webkit-animation: boxJump 4s linear 2.2s 1 forwards;
+                -moz-animation: boxJump 4s linear 2.2s 1 forwards;
+                -o-animation: boxJump 4s linear 2.2s 1 forwards;
+                animation: boxJump 4s linear 2.2s 1 forwards;
+
+                    @media (max-width: 727px) {
+                        height:16.5px;
+                        -webkit-animation: none;
+                        -moz-animation: none;
+                        -o-animation: none;
+                        animation: none;
+                    }
+
+                    @media (max-width: 420px) { height:8.25px;} 
+
+
+                .imagery, .filming, .threesixty {height:31px; width:auto; top:0; right:0; position:absolute;
+
+                    @media (max-width: 727px) { height:16.5px;}
+                    @media (max-width: 420px) { height:8.25px;}
+                }
+
+                .imagery {
+                opacity:1;
+                -webkit-animation: imageryFade 2s linear 3.2s 1 forwards;
+                -moz-animation: imageryFade 2s linear 3.2s 1 forwards;
+                -o-animation: imageryFade 2s linear 3.2s 1 forwards;
+                animation: imageryFade 2s linear 3.2s 1 forwards; 
+
+                }
+                .filming {
+                    opacity:0;
+                    -webkit-animation: FadeInOut 1s linear 3.2s 1 forwards;
+                    -moz-animation: FadeInOut 1s linear 3.2s 1 forwards;
+                    -o-animation: FadeInOut 1s linear 3.2s 1 forwards;
+                    animation: FadeInOut 1s linear 3.2s 1 forwards;
+
+                }
+                .threesixty {
+                    opacity:0;
+                    -webkit-animation: FadeInOut 1s linear 4.2s 1 forwards;
+                    -moz-animation: FadeInOut 1s linear 4.2s 1 forwards;
+                    -o-animation: FadeInOut 1s linear 4.2s 1 forwards;
+                    animation: FadeInOut 1s linear 4.2s 1 forwards;
+                }
+
+
+            }
+        }
+
+         .video_container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+

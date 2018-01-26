@@ -1,0 +1,107 @@
+/* Kitchen Single */
+
+.kitchen { 
+
+
+    .container {
+
+        height: 40vh;
+        min-height:150px;
+
+        @media (max-width: 660px) { max-height:300px; }
+
+        h1 {
+            font-size: 79px;
+            font-weight: 500;
+            color: #4a565c;
+            line-height: 1.1em;
+            letter-spacing: 0px;
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 20px;
+
+            @media (max-width: 860px) { font-size: 60px; }
+            @media (max-width: 660px) { font-size: 40px; }
+
+            span {color:#be8833;}
+        }  
+
+        .content {
+            max-width:50%;
+            float:left;
+            margin-top:2em;
+
+            @media (max-width: 1060px) { max-width:100%; }
+
+            h2 { font-weight:400;}
+
+            p {}
+        }    
+
+        .nav-kitchens {
+                float:right;
+                width:20%;
+                min-width:100px;
+
+@media (max-width: 1060px) { float:left; }
+
+                h4 { 
+                font-size: 28px;
+
+                    span {
+                        padding:0px 8px;
+
+                        a {}
+
+                        a:hover {
+                        text-decoration: none !important;
+                        }
+                    }    
+                }    
+            }
+
+     }
+     
+    .slider-anime {
+
+        .flexslider {
+            .slides {
+                li {
+
+                    .container {
+                        position: relative;
+                        height:auto;
+                        padding:0px;
+                        margin:0px auto;                        
+                        left: 0px;
+                        top: 0px;
+
+                        p {
+                            color: #fff;
+                            background: rgba(64, 72, 85, 0.3);
+                            width: auto;
+                            margin: 0px;
+                            margin-right: 30px;
+                            padding: 4px 10px;
+                            display: inline-block;
+                            float: right;
+                        }
+                    }
+                }
+
+            }
+        }
+    }   
+
+    
+}
+
+    .slidefade {
+        -webkit-animation: flyInslide 1s ease-in 100s 1 forwards;
+        -moz-animation: flyInslide 1s ease-in 100s 1 forwards;
+        -ms-animation: flyInslide 1s ease-in 100s 1 forwards;
+        animation: flyInslide 1s ease-in 100s 1 forwards;
+}
+
+
